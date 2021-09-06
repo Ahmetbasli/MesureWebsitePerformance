@@ -7,7 +7,7 @@ const initialize = () => {
 const handleWindowLoad = () => {
   const performance = window.performance;
   if (!performance) return;
-  // performance.timing is deprecated, but used here for browser compatibility
+  //  performance.timing is deprecated, but used here for browser compatibility
   // time = performance.getEntriesByType("navigation")[0] is another option
   const time = performance.timing;
   const ttfb = time.responseStart - time.navigationStart;
